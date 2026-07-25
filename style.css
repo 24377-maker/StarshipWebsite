@@ -1,7 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .hero{
@@ -30,4 +30,53 @@ html, body{
 
 .logo {
     height: 25px;
+}
+
+.system {
+    padding:  60px 40px;
+    text-align: center;
+
+}
+
+.system h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+
+}
+
+.system h1 span {
+    font-weight: normal;
+
+}
+
+.system-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.side-image {
+    height:  500px;
+    object-fit:  contain;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.card {
+    background-color: #eee;
+    border-radius: 15px;
+    padding:  20px;
+    text-align: left;
+}
+
+.booster-image {
+    height: 600px;
+    width: auto;
 }
