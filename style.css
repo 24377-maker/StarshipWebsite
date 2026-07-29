@@ -81,9 +81,36 @@ html, body{
     width: auto;
 }
 
-.engine {}
+.engine {
+    background-color: black;
+    color: white;
+    padding: 60px 40px;
+}
+.engine-display {
+    height: 500px;
+    object-fit: contain;
+}
 
 .engine h1{
     text-align: center;
-    size: 60px;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: white;
 }
+
+.raptor .number {
+    font-weight: 900;
+}
+
+.engine-layout {
+    max-width: 600px;
+}
+.raptor-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 60px;
+    margin-top: 40px;
+    border-top: 20px;
+
+}
+
