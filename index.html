@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<link rel="stylesheet" href="style.css">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starship — SpaceX</title>
 </head>
 <body>
 
-    <div class="hero">
+    <nav class="site-nav">
+        <button class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu">
+            <a href="#hero">Overview</a>
+            <a href="#system">System</a>
+            <a href="#engine">Raptor 3</a>
+        </div>
+    </nav>
+
+    <div class="hero" id="hero">
         <img src="starship.jpg" class="hero-image">
         <div class="hero-text">
             <h1>STARSHIP</h1>
@@ -13,7 +27,7 @@
         </div>
     </div>
 
-<section class="system">
+<section class="system" id="system">
     <h1>STARSHIP <span>SYSTEM</span></h1>
 
     <div class="system-layout">
@@ -31,6 +45,7 @@
             </div>
 
             <div class="card">
+                <p><strong> Stack Overview</strong></p>
                 <p><strong>Full Stack height:</strong> 123m<br>
                 <strong>Booster Engines:</strong> 33 x Raptor 2<br>
                 <strong>Ship Engines</strong> 3 sea-level + 3 vacuum Raptor<br>
@@ -39,7 +54,8 @@
                 <strong>Payload to LEO (expendable):</strong>150 tonnes<br>
                 <strong>Propellant:</strong> Liquid methane + LOX<br>
                 <strong>Hull material:</strong> 301 stainless steel<br>
-                <strong>Reentry tiles:</strong> ~18,000 hexagonal ceramic</p>   
+                <strong>Reentry tiles:</strong> ~18,000 hexagonal ceramic</p>  
+                <a href="https://rocketlaunch.org/launch-providers/spacex/starship" class="spec-link">View full stack overview →</a> 
             </div>
 
             <div class="card">
@@ -51,7 +67,7 @@
     </div>
 </section>
 
-<section class="engine">
+<section class="engine" id="engine">
 
     <h1>RAPTOR <span class="number">3</span> ENGINE</h1>
 
@@ -79,6 +95,8 @@
         <p><strong>Cycle:</strong> Full-flow staged combustion</p>
     </div>
 </section>
-        
+<footer>
+    <p>Made by Arman Asghari · Data sourced from SpaceX</p>
+</footer>      
 </body>
 </html>

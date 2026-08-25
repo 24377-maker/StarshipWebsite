@@ -1,10 +1,74 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+/* --- Navigation Links --- */
+
+.site-nav{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-toggle{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(15,17,23,0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.nav-toggle span{
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.nav-menu{
+    max-width: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(15,17,23,0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: max-width 0.3s ease, padding 0.3s ease;
+    white-space: nowrap;
+}
+.nav-menu.open{
+    max-width: 400px;
+    padding: 0.8rem 1.5rem;
+}
+.nav-menu a{
+    color: #9aa0ac;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.nav-menu a:hover{
+    color: #fffdfc;
+}
+
+/* ---  body and html --- */
 
 html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family:'Inter', sans-serif;;
+    font-family:'Inter', sans-serif;
+    scroll-behavior: smooth;   /* add this */
+
+    
 }
 
 .hero{
@@ -102,10 +166,6 @@ html, body{
     color: white;
 }
 
-.raptor .number {
-    font-weight: 900;
-}
-
 .engine-layout {
   display: flex;
   justify-content: space-between;
@@ -122,3 +182,32 @@ html, body{
 
 }
 
+.card a.spec-link{
+    display: inline-block;
+    margin-top: 0.9rem;
+    color: #040404;
+    text-decoration: none;
+    font-weight: 600;
+}
+.card a.spec-link:hover{ text-decoration: underline; }
+
+a:focus, button:focus{
+    outline: 2px solid #fff9f7;
+    outline-offset: 2px;
+}
+
+@media (max-width: 900px){
+    .system-layout, .engine-layout{ flex-direction: column; }
+    .side-image, .booster-image, .engine-display{ height: 280px; width: auto; margin: 0 auto; }
+    .cards{ grid-template-columns: 1fr; }
+    .raptor-stats{ grid-template-columns: 1fr; }
+    .hero-text h1, .system h1, .engine h1{ font-size: 34px; }
+}
+
+footer{
+    text-align: center;
+    padding: 30px 20px;
+    color: #9aa0ac;
+    font-size: 0.8rem;
+    background: black;
+}
