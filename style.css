@@ -2,6 +2,8 @@
 
 /* --- Navigation Links --- */
 
+
+/* --- menu is fixed to the top right position --- */
 .site-nav{
     position: fixed;
     top: 20px;
@@ -12,13 +14,15 @@
     align-items: flex-end;
 }
 
+
+/* --- the cirruclar hamburger icon that closes and opens the menu --- */
 .nav-toggle{
     width: 44px;
     height: 44px;
     border-radius: 50%;
     border: none;
-    background: rgba(15,17,23,0.85);
-    backdrop-filter: blur(10px);
+    background: rgba(15,17,23,0.85); /* ---semi transparent dark background--- */
+    backdrop-filter: blur(10px); /* --- blurs the stuff behind it --- */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +30,8 @@
     gap: 4px;
     cursor: pointer;
 }
+
+/* --- The three individual lines that make up the hamburger icon --- */
 .nav-toggle span{
     width: 18px;
     height: 2px;
@@ -33,6 +39,8 @@
     border-radius: 2px;
 }
 
+
+/*--- Dropdown menu — hidden by default (max-width: 0 clips its contents) ---*/
 .nav-menu{
     max-width: 0;
     overflow: hidden;
@@ -46,15 +54,22 @@
     transition: max-width 0.3s ease, padding 0.3s ease;
     white-space: nowrap;
 } 
+
+/*--- opens the menu ---*/
 .nav-menu.open{
     max-width: 400px;
     padding: 0.8rem 1.5rem;
 }
+
+/*-- when hovering over the menu it highlights it ---*/
+
 .nav-menu a{
     color: #9aa0ac;
     text-decoration: none;
     font-size: 0.85rem;
 }
+
+/*-- when hovering over the menu it highlights it ---*/
 .nav-menu a:hover{
     color: #fffdfc;
 }
