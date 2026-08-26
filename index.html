@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> <!--heading, tab icon and css to html link-->
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,20 @@
     <link rel="icon" href="spacex.svg">
 </head>
 <body>
-
+    <!--navigation hamburger menu-->
     <nav class="site-nav">
         <button class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('open')">
             <span></span><span></span><span></span>
         </button>
+            <!--selection, it closes the menu when you click ur desired page so you dont have to close it manually-->
         <div class="nav-menu">
-            <a href="#hero">Overview</a>
-            <a href="#system">System</a>
-            <a href="#engine">Raptor 3</a>
+            <a href="#hero" onclick="document.querySelector('.nav-menu').classList.remove('open')">Overview</a>
+            <a href="#system" onclick="document.querySelector('.nav-menu').classList.remove('open')">System</a>
+            <a href="#engine" onclick="document.querySelector('.nav-menu').classList.remove('open')">Raptor 3</a>
+        </div>
         </div>
     </nav>
-
+    <!--hero image page-->
     <div class="hero" id="hero">
         <img src="Screenshot 2026-08-26 at 1.42.33 PM.png" class="hero-image"  alt=" Starship taking off">
         <div class="hero-text">
@@ -27,7 +29,7 @@
             <img src="spacex-logo-black-and-white.png" class="logo" alt=" SpaceX logo">
         </div>
     </div>
-
+    <!--Page 2: starship system-->
 <section class="system" id="system">
     <h1>STARSHIP <span>SYSTEM</span></h1>
 
@@ -44,7 +46,7 @@
                 <h3>Super Heavy Booster</h3>
                 <p>Super Heavy is the first stage of the Starship system, generating over 74.3 meganewtons of thrust from 33 Raptor engines — more than double the Saturn V. After launch, the booster performs a controlled return to the launch site, where it is caught mid-air by the Mechazilla tower arms, enabling rapid reuse with zero hardware loss.</p>
             </div>
-
+            <!--full stack information and stats-->
             <div class="card">
                 <p><strong> Stack Overview</strong></p>
                 <p><strong>Full Stack height:</strong> 123m<br>
@@ -67,7 +69,7 @@
         <img src="superheavy.jpg" class="side-image booster-image" alt="Superheavy Booster image">
     </div>
 </section>
-
+ <!--raptor 3 engine page 3-->
 <section class="engine" id="engine">
 
     <h1>RAPTOR <span class="number">3</span> ENGINE</h1>
@@ -86,7 +88,7 @@
         </div>
             <img src="Raptor3ENGINE.jpg" class="engine-display" alt="Raptor 3 Engine render">
     </div>
-
+    <!--stats and specifications-->
     <div class="raptor-stats">
         <p><strong>Thrust (sea level):</strong> 280 tf</p>
         <p><strong>Engine mass:</strong> 1,525 kg</p>
@@ -96,6 +98,8 @@
         <p><strong>Cycle:</strong> Full-flow staged combustion</p>
     </div>
 </section>
+
+    <!--footer (credits)-->
 <footer>
     <p>Made by Arman Asghari · Data sourced from SpaceX</p>
 </footer>      

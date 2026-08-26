@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap'); /* --- importing font url from google fonts --- */
 
 /* --- Navigation Links --- */
 
@@ -45,7 +45,7 @@
     margin-top: 10px;
     transition: max-width 0.3s ease, padding 0.3s ease;
     white-space: nowrap;
-}
+} 
 .nav-menu.open{
     max-width: 400px;
     padding: 0.8rem 1.5rem;
@@ -59,6 +59,13 @@
     color: #fffdfc;
 }
 
+
+
+
+
+
+
+
 /* ---  body and html --- */
 
 html, body{
@@ -71,19 +78,35 @@ html, body{
     
 }
 
+
+
+
+
+/* ---  first page / hero image --- */
 .hero{
     position: relative;
     width: 100%;
     height: 100vh;
 }
+
+/* --- hero image display --- */
 .hero-image{
     display: block;
     width:  100%;
     height: 100%;
     object-fit: cover;
 
-}
-.hero-text{
+} 
+
+
+
+
+
+
+
+
+/* ---  Starship text --- */
+.hero-text{ 
     position: absolute;
     bottom: 30px;
     left: 30px;
@@ -95,16 +118,19 @@ html, body{
     margin: 0;
 }
 
+/* ---  space x logo beneath the starsihp --- */
 .logo {
     height: 25px;
 }
 
+/* ---  Starship system --- */
 .system {
     padding:  60px 40px;
     text-align: center;
 
 }
 
+/* ---  Starship system main heading --- */
 .system h1 {
     font-size: 50px;
     margin-bottom: 40px;
@@ -116,6 +142,7 @@ html, body{
 
 }
 
+/* ---  Starship system card layout --- */
 .system-layout{
     display: flex;
     align-items: center;
@@ -123,12 +150,14 @@ html, body{
     gap: 40px;
 }
 
+/* ---  starship image, left side  --- */
 .side-image {
     height:  500px;
     object-fit:  contain;
 
 }
 
+/* ---  card spacing/layout --- */
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -136,6 +165,7 @@ html, body{
 
 }
 
+/* ---  card information/text --- */
 .card {
     background-color: #eee;
     border-radius: 15px;
@@ -143,22 +173,50 @@ html, body{
     text-align: left;
 }
 
+/* ---  superheavy booster side image on the right --- */
 .booster-image {
     height: 600px;
     width: auto;
 }
 
+/* ---  hyperlink to starship full stack overview on page 2 --- */
+.card a.spec-link{
+    display: inline-block;
+    margin-top: 0.9rem;
+    color: #040404;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card a.spec-link:hover{ text-decoration: underline; } /* ---  when hovered over, the text in underlined, making it known as a link --- */
+
+/*-- cursour bulge hover feature, the image scales when hovered over --- */
+.side-image{ transition: transform 0.3s ease; }
+.side-image:hover{ transform: scale(1.03); }
+
+.engine-display { transition: transform 0.3s ease; }
+.engine-display:hover{ transform: scale(1.03); }
+
+
+
+
+
+
+/* --- raptor 3 engine page section --- */
 .engine {
     background-color: black;
     color: white;
     padding: 60px 40px;
 }
+
+/* ---  raptor 3 engine render image --- */
 .engine-display {
     height: 500px;
     object-fit: contain;
     flex-shrink: 0;
 }
 
+/* ---  raptor 3 engine main heading--- */
 .engine h1{
     text-align: center;
     font-size: 60px;
@@ -166,12 +224,14 @@ html, body{
     color: white;
 }
 
+/* ---  page 3 layout --- */
 .engine-layout {
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
 
+/* ---  raptor 3 engine bottom page stats layout and grid --- */
 .raptor-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -182,20 +242,17 @@ html, body{
 
 }
 
-.card a.spec-link{
-    display: inline-block;
-    margin-top: 0.9rem;
-    color: #040404;
-    text-decoration: none;
-    font-weight: 600;
-}
-.card a.spec-link:hover{ text-decoration: underline; }
 
+
+
+
+/* --- visible outline when clicking on the menu --- */
 a:focus, button:focus{
     outline: 2px solid #fff9f7;
     outline-offset: 2px;
 }
 
+/*-- Responsive layout for screens 900px or narrower tablets/phones --- */
 @media (max-width: 900px){
     .system-layout, .engine-layout{ flex-direction: column; }
     .side-image, .booster-image, .engine-display{ height: 280px; width: auto; margin: 0 auto; }
@@ -204,6 +261,10 @@ a:focus, button:focus{
     .hero-text h1, .system h1, .engine h1{ font-size: 34px; }
 }
 
+
+
+
+/* ---  footer at the end of page 3 --- */
 footer{
     text-align: center;
     padding: 30px 20px;
@@ -211,9 +272,3 @@ footer{
     font-size: 0.8rem;
     background: black;
 }
-
-.side-image{ transition: transform 0.3s ease; }
-.side-image:hover{ transform: scale(1.03); }
-
-.engine-display { transition: transform 0.3s ease; }
-.engine-display:hover{ transform: scale(1.03); }
