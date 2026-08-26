@@ -211,3 +211,9 @@ footer{
     font-size: 0.8rem;
     background: black;
 }
+
+.side-image{ transition: transform 0.3s ease; }
+.side-image:hover{ transform: scale(1.03); }
+
+.engine-display { transition: transform 0.3s ease; }
+.engine-display:hover{ transform: scale(1.03); }
