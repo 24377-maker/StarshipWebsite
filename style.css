@@ -90,7 +90,10 @@ html, body{
     font-family:'Inter', sans-serif;
     scroll-behavior: smooth; 
     background: black;
-    
+
+}
+html {
+    overscroll-behavior: none;
 }
 
 
@@ -123,6 +126,8 @@ html, body{
     position: relative;
     width: 100%;
     height: 100vh;
+    background: black;   
+    overflow: hidden;    
 }
 
 /* --- hero image display --- */
@@ -131,6 +136,7 @@ html, body{
     width:  100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1.05); 
 
 } 
 
