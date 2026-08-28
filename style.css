@@ -93,7 +93,7 @@ html, body{
 
 }
 html {
-    overscroll-behavior: none;
+    overscroll-behavior: none; /*-- fixed overscroll ---*/
 }
 
 
@@ -136,9 +136,19 @@ html {
     width:  100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1.05); 
+    transform: scale(1); 
 
 } 
+.hero::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, white);
+    pointer-events: none;
+}
 
 
 
@@ -150,7 +160,7 @@ html {
 /* ---  Starship text --- */
 .hero-text{ 
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 30px;
     color: white;
 }
