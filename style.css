@@ -17,24 +17,24 @@
 
 /* --- the cirruclar hamburger icon that closes and opens the menu --- */
 .nav-toggle{
-    width: 44px;
-    height: 44px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
-    border: none;
-    background: rgba(15,17,23,0.85); /* ---semi transparent dark background--- */
-    backdrop-filter: blur(10px); /* --- blurs the stuff behind it --- */
+    border: 2px solid rgba(255,255,255,0.25);
+    background: rgba(15,17,23,0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 5px;
     cursor: pointer;
 }
 
-/* --- The three individual lines that make up the hamburger icon --- */
 .nav-toggle span{
-    width: 18px;
-    height: 2px;
+    width: 22px;
+    height: 3px;
     background: #fff;
     border-radius: 2px;
 }
@@ -215,6 +215,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    
 
 }
 
