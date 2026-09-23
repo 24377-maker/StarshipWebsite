@@ -224,6 +224,12 @@ html {
     border-radius: 15px;
     padding:  20px;
     text-align: left;
+    line-height: px;
+}
+
+/*-- the space between the stat variable and number --*/
+table td:first-child {
+    padding-right: 24px;
 }
 
 /* ---  superheavy booster side image on the right --- */

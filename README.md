@@ -21,19 +21,18 @@ Starship is SpaceX's fully reusable launch system. This site breaks it down into
 ## File structure
 
 StarshipWebsite/
-├── Frame/
-│   ├── index.html
-│   └── style.css
 ├── Images/
-│   ├── starship_hero_d.jpg
-│   ├── superheavy.jpg
 │   ├── Raptor3ENGINE.jpg
 │   ├── spacex-logo-black-and-white.png
-│   ├── spacex.svg
-│   └── Elon-Musk-No-Background.png
+│   ├── spacexLOGO.svg
+│   ├── starship_hero_d.jpg
+│   ├── StarshipTOPHALF.jpg
+│   └── superheavy.jpg
 ├── Text and Information/
 │   └── Information
-└── README.md
+├── index.html
+├── README.md
+└── style.css
 
 ## Testing & feedback log
 
